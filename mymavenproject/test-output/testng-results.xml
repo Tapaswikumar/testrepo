@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-05-19T18:02:42Z" name="Default suite" finished-at="2018-05-19T18:03:09Z" duration-ms="26097">
+    <groups>
+    </groups>
+    <test started-at="2018-05-19T18:02:42Z" name="Default test" finished-at="2018-05-19T18:03:09Z" duration-ms="26097">
+      <class name="tests.Test1_IdCheck">
+        <test-method is-config="true" signature="launch()[pri:0, instance:tests.Test1_IdCheck@6236eb5f]" started-at="2018-05-19T18:02:42Z" name="launch" finished-at="2018-05-19T18:03:05Z" duration-ms="22159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="TC01_IdValidity(java.lang.String)[pri:0, instance:tests.Test1_IdCheck@6236eb5f]" started-at="2018-05-19T18:03:05Z" name="TC01_IdValidity" data-provider="testdata" finished-at="2018-05-19T18:03:06Z" duration-ms="1250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[amitabh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_IdValidity -->
+        <test-method signature="TC01_IdValidity(java.lang.String)[pri:0, instance:tests.Test1_IdCheck@6236eb5f]" started-at="2018-05-19T18:03:06Z" name="TC01_IdValidity" data-provider="testdata" finished-at="2018-05-19T18:03:07Z" duration-ms="1407" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tapaswi.kr@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_IdValidity -->
+        <test-method signature="TC01_IdValidity(java.lang.String)[pri:0, instance:tests.Test1_IdCheck@6236eb5f]" started-at="2018-05-19T18:03:07Z" name="TC01_IdValidity" data-provider="testdata" finished-at="2018-05-19T18:03:07Z" duration-ms="62" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Narendra]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.InvalidElementStateException">
+            <message>
+              <![CDATA[Unable to clear element that cannot be edited: <input id="ap_email" name="email" type="hidden">
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'TAPASWI', ip: '192.168.42.142', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '9.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 96, moz:profile: C:\Users\Welcome\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 3c312eda-6e48-4e6d-bc41-9d57da2e3062]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidElementStateException: Unable to clear element that cannot be edited: <input id="ap_email" name="email" type="hidden">
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'TAPASWI', ip: '192.168.42.142', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '9.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 96, moz:profile: C:\Users\Welcome\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 3c312eda-6e48-4e6d-bc41-9d57da2e3062
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)
+at utilities.GeneralOps.setdata(GeneralOps.java:13)
+at operations.SignInOp.signIn(SignInOp.java:22)
+at tests.Test1_IdCheck.TC01_IdValidity(Test1_IdCheck.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_IdValidity -->
+        <test-method signature="TC01_IdValidity(java.lang.String)[pri:0, instance:tests.Test1_IdCheck@6236eb5f]" started-at="2018-05-19T18:03:07Z" name="TC01_IdValidity" data-provider="testdata" finished-at="2018-05-19T18:03:07Z" duration-ms="47" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.InvalidElementStateException">
+            <message>
+              <![CDATA[Unable to clear element that cannot be edited: <input id="ap_email" name="email" type="hidden">
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'TAPASWI', ip: '192.168.42.142', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '9.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 96, moz:profile: C:\Users\Welcome\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 3c312eda-6e48-4e6d-bc41-9d57da2e3062]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidElementStateException: Unable to clear element that cannot be edited: <input id="ap_email" name="email" type="hidden">
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'TAPASWI', ip: '192.168.42.142', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '9.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 96, moz:profile: C:\Users\Welcome\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 3c312eda-6e48-4e6d-bc41-9d57da2e3062
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)
+at utilities.GeneralOps.setdata(GeneralOps.java:13)
+at operations.SignInOp.signIn(SignInOp.java:22)
+at tests.Test1_IdCheck.TC01_IdValidity(Test1_IdCheck.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_IdValidity -->
+        <test-method is-config="true" signature="StatusCheck()[pri:0, instance:tests.Test1_IdCheck@6236eb5f]" started-at="2018-05-19T18:03:08Z" name="StatusCheck" finished-at="2018-05-19T18:03:09Z" duration-ms="1063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StatusCheck -->
+      </class> <!-- tests.Test1_IdCheck -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
